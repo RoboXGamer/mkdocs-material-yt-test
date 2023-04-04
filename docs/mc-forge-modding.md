@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-**Minecraft Forge** is a modding framework, designed to allow different mods to load and work together to be compatible. Through the years, there has been many changes in the Forge tooling to make working with mods as seamless as possible. It is now easier than ever to start making your own mod.
+**Minecraft Forge** is a modding framework, designed to allow different mods to load and work together to be compatible.
 
 ### Introduction
 
@@ -33,10 +33,10 @@
   - `README.txt` - Readme file with the basic setup instructions
 
 [^1]: [StackOverflow answer](https://stackoverflow.com/a/6075320/14416954){:target="\_blank"}
-[^2]: [[2]](https://git-scm.com/docs/gitattributes)
-[^3]: [[3]](https://git-scm.com/docs/gitignore)
-[^4]: [[4]](https://docs.gradle.org/7.4.2/userguide/tutorial_using_tasks.html)
-[^5]: [[5]](https://docs.gradle.org/7.4.2/userguide/build_environment.html#sec:gradle_configuration_properties)
+[^2]: [Official git documentation on .gitatrriutes](https://git-scm.com/docs/gitattributes)
+[^3]: [Official git documentation on .gitignore](https://git-scm.com/docs/gitignore)
+[^4]: [Gradle User Guide for: Build Script Basics](https://docs.gradle.org/7.4.2/userguide/tutorial_using_tasks.html)
+[^5]: [Gradle User Guide for: Build Environment & Gradle properties](https://docs.gradle.org/7.4.2/userguide/build_environment.html#sec:gradle_configuration_properties)
 
 ### Prerequisites
 
@@ -82,4 +82,10 @@ There are four default run configurations with the MDK:
 - `runData`, for starting the client in data generation mode.
 - `runGameTestServer`, for starting a build server to run game tests.
 
-### Conclusion and related links
+You can build your mod's final JAR using the `build` task. The resulting JAR will be located in the `build/libs` folder under your project directory.
+
+### Conclusion
+
+Now you are setup with the mod initial setup and can start adding all the features you want.
+
+---
