@@ -57,6 +57,29 @@
    For **IntelliJ IDEA**: the task is `genIntellijRuns`; to run in the IDE directly, open the Gradle on the right, expand the project folder, double-click Tasks > fg_runs > genIntellijRuns.
    For **Visual Studio Code**: the task is `genVSCodeRuns`; the Extension Pack for Java and Gradle for Java plugin should both be installed for smoother integration.
 
-### IDE setup & Initial build
+### Customizing the MDK
+
+The MDK provides default values for the buildscript and mods.toml file. These values should be replaced with your own mod's information.
+
+All edits should be done below the `id 'net.minecraftforge.gradle'` line. The lines above it are required for the Forge MDK to work correctly, and should not be modified without proper knowledge.
+
+All references to `examplemod` in the buildscript should be replaced with your modid.
+Use your IDE's find-and-replace function to quickly replace these values.
+Pick a unique and memorable modid. The modid must be between 2 and 64 characters, and must consist of lowercase letters, numbers, underscores `(_)` and hyphens `(-)`. The recommendation is to avoid using acronyms and abbreviations.
+Change the `archivesBaseName` variable to your modid. This is used as the base name for the JAR file when you build your mod, and as the artifactId of your mod's maven coordinates.
+Change the `group` to your unique root java package. This is used as the groupId of your mod's maven coordinates.
+In the `jar` task, change the values of the `Specification-Vendor` and `Implementation-Vendor` keys to your username/brand name or other form of identification.
+Optional suggestion: Change the `version` variable to have a 0 as the major version (ex. `'0.1'`). This is to follow semantic versioning guidelines for versions in active development.
+
+### Building and Testing
+
+You can test your mod in the development environment using either your IDE's run configurations and built-in debugging utilities, or by running the `run*` task as defined by the buildscript's run configurations.
+
+There are four default run configurations with the MDK:
+
+- `runClient`, for starting the client.
+- `runServer`, for starting the dedicated server. You will need to accept the EULA through the eula.txt after running the server for the first time.
+- `runData`, for starting the client in data generation mode.
+- `runGameTestServer`, for starting a build server to run game tests.
 
 ### Conclusion and related links
