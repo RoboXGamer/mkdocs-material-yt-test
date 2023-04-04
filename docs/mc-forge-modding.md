@@ -33,10 +33,10 @@
   - `README.txt` - Readme file with the basic setup instructions
 
 [^1]: [StackOverflow answer](https://stackoverflow.com/a/6075320/14416954){:target="\_blank"}
-[^2]: [Official git documentation on .gitatrriutes](https://git-scm.com/docs/gitattributes)
-[^3]: [Official git documentation on .gitignore](https://git-scm.com/docs/gitignore)
-[^4]: [Gradle User Guide for: Build Script Basics](https://docs.gradle.org/7.4.2/userguide/tutorial_using_tasks.html)
-[^5]: [Gradle User Guide for: Build Environment & Gradle properties](https://docs.gradle.org/7.4.2/userguide/build_environment.html#sec:gradle_configuration_properties)
+[^2]: [Official git documentation on .gitatrriutes](https://git-scm.com/docs/gitattributes){:target="\_blank"}
+[^3]: [Official git documentation on .gitignore](https://git-scm.com/docs/gitignore){:target="\_blank"}
+[^4]: [Gradle User Guide for: Build Script Basics](https://docs.gradle.org/7.4.2/userguide/tutorial_using_tasks.html){:target="\_blank"}
+[^5]: [Gradle User Guide for: Build Environment & Gradle properties](https://docs.gradle.org/7.4.2/userguide/build_environment.html#sec:gradle_configuration_properties){:target="\_blank"}
 
 ### Prerequisites
 
@@ -89,3 +89,11 @@ You can build your mod's final JAR using the `build` task. The resulting JAR wil
 Now you are setup with the mod initial setup and can start adding all the features you want.
 
 ---
+
+## Adding New Items
+
+## Adding New Blocks
+
+## Adding Recipes,Loot tables & Tags
+
+##
