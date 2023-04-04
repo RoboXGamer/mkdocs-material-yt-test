@@ -12,7 +12,7 @@
 **The Mod Development Kit**
 
 - The Mod Development Kit
-  - `gradle/wrapper/` - The folder containing the [Gradle wrapper](https://docs.gradle.org/7.4.2/userguide/gradle_wrapper.html), Forge uses Version **7.4.2**
+  - `gradle/wrapper/` - The folder containing the [Gradle wrapper](https://docs.gradle.org/7.4.2/userguide/gradle_wrapper.html){:target="\_blank"}, Forge uses Version **7.4.2**
   - `src` - The sources folder
     - `main` - The `main` source set
       - `java` - The java sources for the `main` source set
@@ -20,7 +20,7 @@
       - `resources` - The resources for the `main` source set
         - `META-INF` - The folder for **meta**data **inf**ormation files[^1]
           - `mods.toml` - The `mods.toml` file, where mods are declared
-        - `pack.mcmeta` - File used by Minecraft to [identify data and resource packs](https://minecraft.gamepedia.com/Data_Pack#pack.mcmeta)
+        - `pack.mcmeta` - File used by Minecraft to [identify data and resource packs](https://minecraft.gamepedia.com/Data_Pack#pack.mcmeta){:target="\_blank"}
   - `.gitattributes` - Used by Git for specifying attributes for files[^2]
   - `.gitignore` - Used by Git for specifying intentionally untracked/ignored files[^3]
   - `build.gradle` - The Gradle buildscript, which defines the project and tasks[^4]
@@ -32,20 +32,20 @@
   - `LICENSE.txt` - File containing the licensing information for Forge and libraries
   - `README.txt` - Readme file with the basic setup instructions
 
-[^1]: [1] Hello
-[^2]: [2]
-[^3]: [3]
-[^4]: [4]
-[^5]: [5]
+[^1]: [StackOverflow answer](https://stackoverflow.com/a/6075320/14416954){:target="\_blank"}
+[^2]: [[2]](https://git-scm.com/docs/gitattributes)
+[^3]: [[3]](https://git-scm.com/docs/gitignore)
+[^4]: [[4]](https://docs.gradle.org/7.4.2/userguide/tutorial_using_tasks.html)
+[^5]: [[5]](https://docs.gradle.org/7.4.2/userguide/build_environment.html#sec:gradle_configuration_properties)
 
 ### Prerequisites
 
 - Some Basic Java Knowledge
-- IDE installed(of your choice)`["IntelliJ IDEA/Eclipse/Visual Studio Code"]`
+- IDE installed of your choice - `["IntelliJ IDEA/Eclipse/Visual Studio Code"]`
 
 ### Setup Forge MDK
 
-1. Download the MDK from the [official Minecraft Forge download site](https://files.minecraftforge.net/) and extract the MDK into an empty folder.
+1. Download the MDK from the [official Minecraft Forge download site](https://files.minecraftforge.net/){:target="\_blank"} and extract the MDK into an empty folder.
 2. Open your IDE of choice, and import the project as a Gradle project.
    - For **Eclipse**: `File > Import > Gradle > Existing Gradle Project`, select the folder for the `Project root directory`, click `Finish`
    - For **IntelliJ IDEA**: `File > Open`, select and open the folder, select the `build.gradle` file, click `OK`, click `Open as Project`
@@ -53,7 +53,7 @@
 3. Wait for the setup process to complete and the Minecraft sources are decompiled.
    - For **Visual Studio Code**: This step can be skipped as it was already done in the previous step
 4. Generate the run configurations for your IDE using the appropriate Gradle task. These tasks can be run in the terminal using `./gradlew gen***Runs`.
-   For **Eclipse**: the task is `genEclipseRuns`; to run in the IDE directly, open the Gradle Tasks tab on the bottom panel, wait until the tasks have loaded then expand the folder, expand the fg_runs folder, then double-click _genEclipseRuns_.
+   For **Eclipse**: the task is `genEclipseRuns`; to run in the IDE directly, open the Gradle Tasks tab on the bottom panel, wait until the tasks have loaded then expand the folder, expand the fg*runs folder, then double-click \_genEclipseRuns*.
    For **IntelliJ IDEA**: the task is `genIntellijRuns`; to run in the IDE directly, open the Gradle on the right, expand the project folder, double-click Tasks > fg_runs > genIntellijRuns.
    For **Visual Studio Code**: the task is `genVSCodeRuns`; the Extension Pack for Java and Gradle for Java plugin should both be installed for smoother integration.
 
